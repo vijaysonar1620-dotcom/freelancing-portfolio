@@ -1,0 +1,296 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:linear-gradient(to right, #f8fbff, #e6f0ff);
+    }
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-size: 48px;
+}
+
+h2{
+    color: darkgreen;
+    border-bottom: 2px solid darkgreen;
+    padding-bottom: 5px;
+}
+
+p, li {
+     font-size: 18px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+nav{
+    background-color: darkblue;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+   
+nav a:hover {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: grey;
+}
+
+.card-container{
+    display: flex;
+    gap: 30px;
+    margin: 40px auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width:250px;
+    min-height:180px;
+    height: auto;
+    background: white;
+    padding:20px;
+    border-radius: 10px;
+    transition:0.3s;
+    cursor:pointer;
+    box-shadow: 0 4px 10px
+rgba(0,0,0,0.1);
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align:center;
+    margin: 30px 0;
+    color:darkblue;
+
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: darkblue;
+    color: white;
+}
+
+.card:hover{
+    transform: translater(-8px);
+    transition:0.3s;
+    box-shadow:0 8px 20px
+rgba(0,0,0,0.3);
+}
+
+button{
+    transition:0.3s;
+}
+
+button:hover{
+    background:darkgreen;
+    cursor:pointer;
+}
+
+.profile{
+    text-align: center;
+    margin: 30px ;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid darkblue;
+}
+
+ .profile h2{ 
+    margin: 10px;
+    color: darkblue;
+}
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#1e3a8a;
+}
+
+.hero h2{
+    color: #16a34a;
+}
+
+.hero p{
+    font-size:18px;
+    color:#555;
+    max-width:600px;
+    margin: 15px auto 25px;
+    line-height:1.6;
+}
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+button{
+    border-radius:25px;
+    padding:12px 25px;
+    border:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.profile img{
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    border:4px solid darkblue;
+    object-fit:cover;
+    margin-top:15px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+@media(max-width: 768px){
+    .card-container{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .project-card{
+        width:auto;
+    }
+
+.card{
+    width: auto;
+}
+    nav{
+        flex-direction: column;
+        gap:15px;
+    }
+}
+.contact {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    width: 80%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+    color: darkblue;
+}
+
+.contact a{
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.contact a:hover{
+    text-decoration: underline;
+}
+
+.projects{
+    text-align: center;
+    margin: 30px 0;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.projects h2{
+    color: darkgreen;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    min-height: 160px;
+    text-align: center;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h3{
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    color: grey;
+    line-height: 1.5;
+}
+
+.project-card strong{
+    color: darkblue;
+}
+
